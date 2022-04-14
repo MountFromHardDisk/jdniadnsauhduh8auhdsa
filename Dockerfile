@@ -47,9 +47,9 @@ RUN apt-get -qqy update \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
+    && apt-get install nano -y \
+    && apt-get install screen -y \
     && apt-get install openjdk-8-jre -y \
-    && apt install nano \
-    && apt install screen \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
